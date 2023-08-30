@@ -13,6 +13,7 @@ async function GetMessage() {
   return data;
 }
 
+export const revalidate = 60;
 export default async function Guestbook() {
   const data = await GetMessage();
   return (
