@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profile from "@/public/about-image.png";
+import FrontEndSkills from "./components/Skills";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           Home
         </h1>
       </div>
-      <div className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-u-0">
+      <div className="items-center mb-6 space-y-2 relative xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-u-0">
         <div className="flex flex-col items-center pt-8 ">
           <Image
             alt="Picture of Jason"
@@ -22,9 +23,12 @@ export default function Home() {
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
             Jason Evaristo
           </h3>
-          <p className="text-gray-500 dark:text-gray-300 text-center">
-            Hey my name is Jason and I am a Full Stack software Engineer
+          <p className="text-gray-500 dark:text-gray-300 text-center font-medium">
+            Hey my name is Jason and I am a Software Developer
           </p>
+          <div className=" bg-green-400 rounded-md px-12 py-3 mt-2 text-gray-900 dark:text-gray-100 font-semibold items-center">
+            FOLLOW ME
+          </div>
           <div className="flex space-x-5 pt-6">
             <a href="" target="_blank">
               <svg
@@ -50,7 +54,7 @@ export default function Home() {
                 fill="currentColor"
                 className="w-8 h-8 text-teal-500 hover:text-teal-600"
               >
-                <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z" />
+                <path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z" />
               </svg>
             </a>
             <a href="" target="_blank">
@@ -59,12 +63,12 @@ export default function Home() {
                 fill="currentColor"
                 className="w-8 h-8 text-teal-500 hover:text-teal-600"
               >
-                <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm215.3 337.7c.3 4.7.3 9.6.3 14.4 0 146.8-111.8 315.9-316.1 315.9-63 0-121.4-18.3-170.6-49.8 9 1 17.6 1.4 26.8 1.4 52 0 99.8-17.6 137.9-47.4-48.8-1-89.8-33-103.8-77 17.1 2.5 32.5 2.5 50.1-2a111 111 0 01-88.9-109v-1.4c14.7 8.3 32 13.4 50.1 14.1a111.13 111.13 0 01-49.5-92.4c0-20.7 5.4-39.6 15.1-56a315.28 315.28 0 00229 116.1C492 353.1 548.4 292 616.2 292c32 0 60.8 13.4 81.1 35 25.1-4.7 49.1-14.1 70.5-26.7-8.3 25.7-25.7 47.4-48.8 61.1 22.4-2.4 44-8.6 64-17.3-15.1 22.2-34 41.9-55.7 57.6z" />
+                <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z" />
               </svg>
             </a>
           </div>
         </div>
-        <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
+        <div className="prose max-w-none prose-lg mb-5 pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
             Hey everyone my name is Jason, I am 21 years old and i am a Full
             Stack developer based in Davao/Philippines
@@ -82,6 +86,24 @@ export default function Home() {
             and community engagement. I am thrilled to continue this journey,
             honing my skills, and inspiring others in the process.
           </p>
+        </div>
+      </div>
+      <div>
+        <h1 className="text-center lg:text-start dark:text-gray-100 text-gray-900 text-2xl font-semibold mt-6">
+          My specialization in the client side <br className="lg:hidden" /> of
+          software development
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          <div className="grid-item  col-span-2 divide-y divide-gray-100 dark:divide-gray-700">
+            <FrontEndSkills />
+          </div>
+          <div className="grid-item flex flex-col">
+            <div className="flex-item flex flex-col mt-6">
+              <div className="px-12 py-3 bg-green-500">
+                PROGRAMMING LANGUAGE/FRAMEWORKS
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
