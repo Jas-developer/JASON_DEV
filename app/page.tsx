@@ -1,6 +1,8 @@
 import Image from "next/image";
 import profile from "@/public/about-image.png";
 import FrontEndSkills from "./components/Skills";
+import Language from "./components/Language";
+import Tools from "./components/Tools";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
           className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl 
    sm:leading-10 md:text-6xl md:leading-14 "
         >
-          Home
+          HOME
         </h1>
       </div>
       <div className="items-center mb-6 space-y-2 relative xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-u-0">
@@ -24,9 +26,9 @@ export default function Home() {
             Jason Evaristo
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center font-medium">
-            Hey my name is Jason and I am a Software Developer
+            Davao City | Software Developer
           </p>
-          <div className=" bg-green-400 rounded-md px-12 py-3 mt-2 text-gray-900 dark:text-gray-100 font-semibold items-center">
+          <div className=" bg-green-400  px-12 py-3 mt-2 text-gray-100 font-semibold items-center">
             FOLLOW ME
           </div>
           <div className="flex space-x-5 pt-6">
@@ -70,38 +72,47 @@ export default function Home() {
         </div>
         <div className="prose max-w-none prose-lg mb-5 pt-8 pb-7 dark:prose-invert xl:col-span-2">
           <p>
-            Hey everyone my name is Jason, I am 21 years old and i am a Full
-            Stack developer based in Davao/Philippines
+            Thank your for vising my portfolio, my name is Jason Evaristo, and I
+            am a software developer based in Davao City, Philippines.
           </p>
           <p>
-            I love building Full Stack applications with React and reading books
-            at the same time. When i discovered NextJs, I was blown away by its
-            interactivity and speed. Its virtual DOM and efficient rendiring
-            mechanisms allowed me to create dynamic user interfaces that
-            responded to user actions in real-time.
+            I love building software applications with React. What I love about
+            React is its virtual DOM feature that allows developers to separate
+            components into small chunks, making the user experience
+            faster.Currently, I am exploring Next.js by building this full-stack
+            portfolio, and I am blown away by its interactivity, speed, and
+            features. Its efficient rendering mechanisms enable me to create
+            dynamic user interfaces that respond to user actions in real-time.
           </p>
           <p>
-            Building applications with Reactand sharing them in my classmates.
-            ultimate combination of creative expression, technical experties.
-            and community engagement. I am thrilled to continue this journey,
-            honing my skills, and inspiring others in the process.
+            I am thrilled to continue this journey, honing my skills, and
+            inspiring others in the process while working towards achieving my
+            goals in the tech industry. I am looking forward to discussing how
+            my capabilities align with your company`s needs.
           </p>
         </div>
       </div>
-      <div>
+      <div className="mb-12">
+        <span className="text-gray-600 dark:text-gray-300">2023-8-26</span>
         <h1 className="text-center lg:text-start dark:text-gray-100 text-gray-900 text-2xl font-semibold mt-6">
-          My specialization in the client side <br className="lg:hidden" /> of
-          software development
+          MY SPECIALIZATION IN CLIENT SIDE OF SOFTWARE DEVELOPMENT
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="grid-item  col-span-2 divide-y divide-gray-100 dark:divide-gray-700">
             <FrontEndSkills />
           </div>
-          <div className="grid-item flex flex-col">
-            <div className="flex-item flex flex-col mt-6">
-              <div className="px-12 py-3 bg-green-500">
-                PROGRAMMING LANGUAGE/FRAMEWORKS
+          <div className="grid-item ">
+            <div className="flex-item flex flex-col mt-6 relative">
+              <div className="px-12 py-3 bg-green-500  text-gray-100 font-semibold">
+                LANGUAGE / FRAMEWORKS
               </div>
+              <Language />
+            </div>
+            <div className="flex-item flex flex-col mt-6 relative">
+              <div className="px-12 py-3 bg-green-500  text-gray-100 font-semibold">
+                TOOLS / RESOURCES / DATABASES
+              </div>
+              <Tools />
             </div>
           </div>
         </div>
