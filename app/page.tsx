@@ -70,34 +70,28 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="prose max-w-none prose-lg mb-5 pt-8 pb-7 dark:prose-invert xl:col-span-2">
-          <p>
-            Thank your for vising my portfolio, my name is Jason Evaristo, and I
-            am a software developer based in Davao City, Philippines.
+        <div className="prose max-w-none prose-lg mb-5 pt-8 pb-7 dark:prose-invert xl:col-span-2 bg-image">
+          <span className="lg:text-4xl md:text-2xl text-xl font-semibold leading-tight text-teal-500">
+            WELCOME TO MY PORTFOLIO
+          </span>
+          <p className="lg:text-2xl md:text-xl text-md font-semibold leading-tight">
+            Hello my name is Jason, I love building software applications with
+            React. Currently, I am exploring Next.js by building this full-stack
+            portfolio.
           </p>
-          <p>
-            I love building software applications with React. What I love about
-            React is its virtual DOM feature that allows developers to separate
-            components into small chunks, making the user experience
-            faster.Currently, I am exploring Next.js by building this full-stack
-            portfolio, and I am blown away by its interactivity, speed, and
-            features. Its efficient rendering mechanisms enable me to create
-            dynamic user interfaces that respond to user actions in real-time.
-          </p>
-          <p>
+          <p className="lg:text-2xl md:text-xl text-md font-semibold leading-tight">
             I am thrilled to continue this journey, honing my skills, and
             inspiring others in the process while working towards achieving my
-            goals in the tech industry. I am looking forward to discussing how
-            my capabilities align with your company`s needs.
+            goals in the tech industry.
           </p>
         </div>
       </div>
       <div className="mb-12">
         <span className="text-gray-600 dark:text-gray-300">2023-8-26</span>
-        <h1 className="text-center lg:text-start dark:text-gray-100 text-gray-900 text-2xl font-semibold mt-6">
+        <h1 className="text-center lg:text-start dark:text-gray-100 text-gray-900 text-lg md:text-2xl font-semibold mt-6">
           MY SPECIALIZATION IN CLIENT SIDE OF SOFTWARE DEVELOPMENT
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="grid-item  col-span-2 divide-y divide-gray-100 dark:divide-gray-700">
             <FrontEndSkills />
           </div>

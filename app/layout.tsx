@@ -19,13 +19,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-white text-black
+        className={`${inter.className} text-black 
        dark:bg-[#090908]  dark:text-white h-full selection:bg-gray-50 
       dark:selection:bg-gray-800`}
       >
         <Provider>
+          <div className="main">
+            <div className="gradient" />
+          </div>
           <Navbar />
-          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
             {children}
           </main>
         </Provider>
