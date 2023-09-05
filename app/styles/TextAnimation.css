@@ -1,0 +1,72 @@
+/* Apply animation styles only on laptops and PCs */
+@media (min-width: 1025px) {
+  b {
+    position: relative;
+    font-size: 14vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+  }
+
+  b {
+    content: attr(data-text);
+    position: block;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 3s linear 1 forwards;
+  }
+}
+
+@keyframes animate {
+  0%,
+  10% {
+    width: 0;
+  }
+  70%,
+  90%,
+  100% {
+    width: 100%;
+  }
+}
+
+.text-container {
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #01fe87;
+  animation: typing 2s steps(23), cursor 0.4s step-end 1 alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.hand-icon {
+  animation: wave 1s infinite alternate;
+  transform-origin: 50% 100%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
