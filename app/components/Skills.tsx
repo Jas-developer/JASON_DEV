@@ -35,7 +35,7 @@ export default async function FrontEndSkills() {
                 d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
               />
             </svg>
-            {skill.specialize}
+            <span className="line-clamp-1"> {skill.specialize}</span>
           </li>
         ))}
       </ul>

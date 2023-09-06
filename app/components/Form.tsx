@@ -8,7 +8,7 @@ export default function Form() {
 
   return (
     <>
-      <h1 className="text-5xl text-gray-700 mb-4  dark:text-gray-100 font-bold">
+      <h1 className="text-5xl text-black mb-4  dark:text-gray-100 font-bold">
         NOTE
       </h1>
       <form
