@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { ReactNode } from "react";
 export function Provider({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       {children}
     </ThemeProvider>
   );

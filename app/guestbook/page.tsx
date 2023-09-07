@@ -1,5 +1,6 @@
 import Form from "../components/Form";
 import { prisma } from "../db";
+import "../styles/GlassBg.css";
 
 // fetch the message data
 async function GetMessage() {
@@ -39,8 +40,8 @@ export default async function Guestbook() {
               <h1 className="text-5xl text-black mb-4  dark:text-gray-100 font-bold">
                 CONTACT
               </h1>
-              <div className="flex flex-col gap-[1rem]">
-                <div className="flex flex-row gap-2 justify-start p-2 items-center border-[2px] border-solid rounded-md border-teal-400">
+              <div className=" flex flex-col gap-[1rem]">
+                <div className=" glass-effect flex flex-row gap-2 justify-start p-2 items-center border-[2px] border-solid rounded-md border-green-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -59,7 +60,7 @@ export default async function Guestbook() {
                     +639705038067
                   </span>
                 </div>
-                <div className="flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-blue-400">
+                <div className="glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-blue-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -79,7 +80,7 @@ export default async function Guestbook() {
                     DAVAO CITY
                   </span>
                 </div>
-                <div className="flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-red-400">
+                <div className=" glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-red-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

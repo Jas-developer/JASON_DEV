@@ -70,3 +70,33 @@
     transform: rotate(20deg);
   }
 }
+
+.glass-effect {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.profile-glass-effect {
+  background: linear-gradient(
+    135deg,
+    rgba(24, 223, 50, 0.1),
+    rgba(21, 218, 21, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+
+  box-shadow: 0 8px 32px 0 rgba(95, 212, 65, 0.37);
+}
+
+.followMe {
+  box-shadow: 0 8px 32px 0 rgba(22, 22, 22, 0.37);
+}

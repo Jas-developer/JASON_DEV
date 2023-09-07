@@ -5,9 +5,11 @@ import Language from "./components/Language";
 import Tools from "./components/Tools";
 import "./styles/TextAnimation.css";
 
+import AllProjects from "./components/Projects";
+
 export default function Home() {
   return (
-    <div className="divide-y divide-gray-600 dark:divide-gray-100 ">
+    <div className="divide-y-[2px] dark:divide-green-300 divide-gray-300 ">
       <div className="space-y-2 pt-5 pb-8 md:space-x-5 ">
         <h1
           className="text-3xl font-extrabold leading-9 tracking-tight   sm:text-4xl 
@@ -22,7 +24,7 @@ export default function Home() {
             <Image
               alt="Picture of Jason"
               src={profile}
-              className="object-cover object-top  image-border  border-l-4 border-t-4 rounded-[50%] border-green-400"
+              className="object-cover object-top  image-border   border-l-4 border-t-4 rounded-[50%] border-green-400 profile-glass-effect"
             />
           </b>
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
@@ -31,7 +33,7 @@ export default function Home() {
           <strong className="text-gray-500 dark:text-gray-300 text-center font-medium">
             Davao City | Software Developer
           </strong>
-          <div className=" bg-green-400  px-12 py-3 mt-2 text-gray-100 font-semibold items-center">
+          <div className=" bg-green-400  px-12 py-3 mt-2 text-gray-100 font-semibold items-center followMe">
             FOLLOW ME
           </div>
           <div className="flex space-x-5 pt-6">
@@ -94,26 +96,33 @@ export default function Home() {
       </div>
       <div className="mb-12">
         <span className="text-gray-600 dark:text-gray-300">2023-8-26</span>
-        <h1 className="text-center  md:text-start dark:text-gray-100 text-gray-900 text-lg md:text-2xl font-semibold mt-6">
+        <h1 className="   lg:text-start dark:text-gray-100 text-gray-700 text-lg md:text-3xl font-semibold mt-6">
           MY SPECIALIZATION IN SOFTWARE DEVELOPMENT
         </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 relative">
-          <div className="grid-item  col-span-2 divide-y divide-gray-100 dark:divide-gray-700">
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
+          <div className="grid-item   col-span-2 ">
             <FrontEndSkills />
-            <h1 className="text-center lg:text-start dark:text-gray-100 text-gray-900 text-lg md:text-2xl font-semibold mt-6">
+            <h1 className="  lg:text-start dark:text-gray-100 text-gray-700 text-lg md:text-3xl font-semibold mt-6">
               PERSONAL PROJECTS
-              <FrontEndSkills />
-              <FrontEndSkills />
             </h1>
+            <div className="lg:pr-3">
+              <AllProjects />
+              <AllProjects />
+              <AllProjects />
+              <AllProjects />
+              <AllProjects />
+              <AllProjects />
+            </div>
           </div>
           <div className="grid-item-2  ">
             <div className="flex-item flex flex-col mt-6  sticky top-10">
-              <div className="px-12 py-3 bg-green-500  text-gray-100 font-semibold ">
+              <div className="glass-effect px-12 py-3 bg-green-500  text-gray-800 dark:text-gray-100 font-semibold ">
                 TOOLS / RESOURCES / DATABASES
               </div>
               <Tools />
               <br />
-              <div className="px-12 py-3 bg-green-500  text-gray-100 font-semibold ">
+              <div className="glass-effect px-12 py-3 bg-green-500  text-gray-800 dark:text-gray-100 font-semibold ">
                 LANGUAGE / FRAMEWORKS
               </div>
               <Language />
