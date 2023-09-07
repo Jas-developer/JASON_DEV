@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     serverActions: true,
+    serverComponents: true,
   },
   images: {
     domains: ["cdn.sanity.io"],
