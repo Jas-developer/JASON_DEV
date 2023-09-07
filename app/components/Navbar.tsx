@@ -70,7 +70,6 @@ export default function Navbar() {
                     }`}
                   >
                     <button className="bg-green-500 rounded-sm text-gray-100 px-3 p-2">
-                      {" "}
                       Contact
                     </button>
                   </Link>
