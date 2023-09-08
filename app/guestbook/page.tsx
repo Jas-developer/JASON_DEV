@@ -1,18 +1,8 @@
 import Form from "../components/Form";
-import { prisma } from "../db";
+import { GetMessage } from "@/prisma/Message";
 import "../styles/GlassBg.css";
 
 // fetch the message data
-async function GetMessage() {
-  const data = await prisma.guestbook.findMany({
-    take: 50,
-    orderBy: {
-      created_at: "desc",
-    },
-  });
-
-  return data;
-}
 
 export const revalidate = 60;
 export default async function Guestbook() {
