@@ -6,6 +6,9 @@ import "../styles/GlassBg.css";
 
 export const revalidate = 60;
 export default async function Guestbook() {
+  if (GetMessage() === undefined) {
+    console.log("Messages is undefined");
+  }
   const data = await GetMessage();
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -14,7 +17,7 @@ export default async function Guestbook() {
           <div className="">
             <Form />
             <div className="flex flex-col space-y-2">
-              {data.map((entry) => (
+              {data?.map((entry) => (
                 <div key={entry.id} className="w-full text-sm break-words">
                   <span className="text-md text-gray-800 font-semibold dark:text-gray-100">
                     {entry.message}
