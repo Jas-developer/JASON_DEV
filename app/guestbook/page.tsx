@@ -4,7 +4,6 @@ import "../styles/GlassBg.css";
 
 // fetch the message data
 
-export const revalidate = 60;
 export default async function Guestbook() {
   if (GetMessage() === undefined) {
     console.log("Messages is undefined");

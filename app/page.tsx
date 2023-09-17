@@ -108,11 +108,6 @@ export default function Home() {
             </h1>
             <div className="lg:pr-3">
               <AllProjects />
-              <AllProjects />
-              <AllProjects />
-              <AllProjects />
-              <AllProjects />
-              <AllProjects />
             </div>
           </div>
           <div className="grid-item-2  ">

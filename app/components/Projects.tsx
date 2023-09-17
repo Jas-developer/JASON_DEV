@@ -10,13 +10,14 @@ interface Data {
 }
 
 async function getProject() {
-  const query = `*[_type == "project"] {
-        title,
-        overview,
-        _id,
-        "image": image.asset->url
-    }`;
+  const query = `*[_type == "project" ] {
+    title,
+    overview,
+    _id,
+    "image": image.asset->url
+}`;
   const data = await client.fetch(query);
+  console.log(data);
   return data;
 }
 
@@ -34,7 +35,7 @@ export default async function AllProjects() {
               src={project.image}
               width={600}
               height={400}
-              alt="learning management system"
+              alt="project-image"
               className="transform transition-transform hover:scale-110 duration-700  object-cover ease-in-out cursor-pointer"
             />
           </div>
