@@ -33,7 +33,7 @@ export default async function Guestbook() {
                 CONTACT
               </h1>
               <div className=" flex flex-col gap-[1rem]">
-                <div className=" glass-effect flex flex-row gap-2 justify-start p-2 items-center border-[2px] border-solid rounded-md border-green-400">
+                <div className=" glass-effect flex flex-row gap-2 justify-start p-2 items-center border-[2px] border-solid rounded-[20%] border-green-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -52,7 +52,7 @@ export default async function Guestbook() {
                     +639705038067
                   </span>
                 </div>
-                <div className="glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-blue-400">
+                <div className="glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-[20%] border-blue-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -72,7 +72,7 @@ export default async function Guestbook() {
                     DAVAO CITY
                   </span>
                 </div>
-                <div className=" glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid rounded-md border-red-400">
+                <div className=" rounded-[20%] glass-effect flex flex-row gap-2 p-2 justify-start items-center border-[2px] border-solid  border-red-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
