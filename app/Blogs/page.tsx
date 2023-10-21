@@ -1,3 +1,5 @@
+"use client";
+
 export default function BlogPosts() {
   return (
     <div className="flex flex-col gap-10">
