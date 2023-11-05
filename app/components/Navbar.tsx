@@ -42,7 +42,7 @@ export default function Navbar() {
                     prefetch
                     className={`${
                       pathname === "/"
-                        ? "border-green-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        ? "border-teal-400 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
@@ -54,7 +54,7 @@ export default function Navbar() {
                     prefetch
                     className={`${
                       pathname === "/Blogs"
-                        ? "border-green-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        ? "border-teal-400 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
@@ -65,11 +65,11 @@ export default function Navbar() {
                     prefetch
                     className={`${
                       pathname === "/guestbook"
-                        ? "border-green-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    <button className="bg-green-500 rounded-sm text-gray-100 px-3 p-2">
+                    <button className="bg-teal-700 rounded-sm text-gray-100 px-3 p-2">
                       Contact
                     </button>
                   </Link>
