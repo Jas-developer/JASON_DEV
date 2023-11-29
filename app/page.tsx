@@ -1,11 +1,11 @@
 import Image from "next/image";
 import profile from "@/public/jason.png";
-import FrontEndSkills from "./components/Skills";
 import Language from "./components/Language";
 import Tools from "./components/Tools";
 import "./styles/TextAnimation.css";
 
 import AllProjects from "./components/Projects";
+import CalendarIcon from "./components/Calendar";
 
 export default function Home() {
   return (
@@ -68,31 +68,58 @@ export default function Home() {
         </div>
         <div className="prose max-w-none lg:text-start text-center  justify-center gap-6 flex flex-col prose-lg mb-5  dark:prose-invert xl:col-span-2 bg-image">
           <span className="text-3xl mt-2  md:text-5xl text-gray-900  font-serif dark:text-gray-100 font-medium">
-            Specialized in Frontend
+            Backend Web Developer
           </span>
           <span className="text-3xl md:text-5xl text-gray-900 dark:text-gray-100 font-medium font-serif">
-            Software Engineering
+            & Technical Support
           </span>
         </div>
       </div>
       <hr />
-      <div className="mb-12">
-        <div className="  text-center py-4 text-gray-900 rounded-md   dark:text-gray-100 text-medium md:text-2xl font-semibold mt-6">
-          MY SPECIALIZATION IN SOFTWARE DEVELOPMENT
+      {/* calendly and a meeting scheduler */}
+      <div className="flex flex-col py-8">
+        <h1 className="text-2xl">
+          Tech Enthusiast based in Davao City, Philippines.
+        </h1>
+        <div className=" grid lg:grid-cols-2 w-full">
+          <div className="flex justify-center w-full py-2 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg mt-8">
+            <CalendarIcon />
+          </div>
+          <div className="flex  items-center flex-col mt-10 md:mt-0 justify-center">
+            <span className="text-2xl font-semibold">
+              Schedule a Zoom Meeting
+            </span>
+            <br />
+            <div className=" w-full flex items-center justify-center">
+              <a href="https://tidycal.com/devopjas/zoom">
+                <button className="bg-teal-500 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
+                  <span> Book a Meeting</span>
+                  <img
+                    width="35"
+                    height="25"
+                    src="https://img.icons8.com/emoji/48/calendar-emoji.png"
+                    alt="calendar-emoji"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <div className="mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
-          <div className="grid-item   col-span-2 ">
-            <h1 className="  lg:text-start text-center dark:text-gray-100 text-gray-900 text-lg md:text-3xl font-semibold mt-6">
-              PERSONAL PROJECTS
+          <div className="grid-item  text-center col-span-2 ">
+            <h1 className=" rounded-l-md  lg:text-start text-center  flex justify-center py-2 bg-teal-600 dark:text-gray-100 text-gray-100 text-lg md:text-3xl font-semibold ">
+              Recent Projects
             </h1>
-            <div className="lg:pr-3">
+            <div className="lg:pr-3 mt-7">
               <AllProjects />
             </div>
           </div>
           <div className="grid-item-2  ">
-            <div className="flex-item flex flex-col mt-6  sticky top-10">
-              <div className=" px-12 py-3 bg-teal-600 text-xl text-gray-100 dark:text-gray-100 font-semibold ">
+            <div className="flex-item flex flex-col   sticky top-10">
+              <div className=" px-12 py-3 bg-teal-600 text-xl text-gray-100 dark:text-gray-100 font-semibold rounded-r-md">
                 TOOLS / RESOURCES / DATABASES
               </div>
               <Tools />
