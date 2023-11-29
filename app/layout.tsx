@@ -29,8 +29,9 @@ export default function RootLayout({
             <div className="gradient" />
           </div>
           <Navbar />
-          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
+          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-2 ">
             {children}
+            <hr />
             <Footer />
           </main>
         </Provider>
