@@ -45,23 +45,5 @@ export default async function AllProjects() {
         </div>
       </div>
     </div>
-    // <div className="">
-    //   {data.map((project) => (
-    //     <div key={project._id} className="flex flex-col glass-effect  mt-5 ">
-    //       <span className="text-blue-700 font-bold lg:text-2xl text-center ">
-    //         {project.title}
-    //       </span>
-    //       <div className="flex glass-effect items-center justify-center  relative overflow-hidden">
-    //         <Image
-    //           src={project.image}
-    //           width={600}
-    //           height={400}
-    //           alt="project-image"
-    //           className="transform transition-transform hover:scale-110 duration-700  object-cover ease-in-out cursor-pointer"
-    //         />
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
   );
 }
