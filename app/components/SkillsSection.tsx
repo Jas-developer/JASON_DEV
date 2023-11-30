@@ -3,7 +3,7 @@ import { iconComponents } from "@/assets/SkillIcons";
 export default function SkillSection() {
   return (
     <section className="">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
         {iconComponents.map((Icon, index) => (
           <div
             key={index}

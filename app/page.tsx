@@ -80,7 +80,7 @@ export default function Home() {
       <hr />
       {/* calendly and a meeting scheduler */}
       <div className="flex flex-col py-8">
-        <h1 className="text-2xl">
+        <h1 className="text-2xl md:text-3xl">
           Tech Enthusiast based in Davao City, Philippines.
         </h1>
         <div className=" grid lg:grid-cols-2 w-full">
@@ -88,32 +88,36 @@ export default function Home() {
             <CalendarIcon />
           </div>
           <div className="flex  items-center flex-col mt-10 md:mt-0 justify-center">
-            <span className="text-2xl font-semibold">
-              Schedule a Zoom Meeting
-            </span>
+            <div className="text-2xl flex justify-center font-semibold">
+              <span> Schedule a Zoom Meeting</span>
+            </div>
             <br />
             <div className=" w-full flex items-center justify-center">
-              <a href="https://tidycal.com/devopjas/zoom">
-                <button className="bg-teal-600 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
-                  <span> Book a Meeting</span>
-                  <img
-                    width="35"
-                    height="25"
-                    src="https://img.icons8.com/emoji/48/calendar-emoji.png"
-                    alt="calendar-emoji"
-                  />
-                </button>
-              </a>
+              <div className=" flex justify-center ">
+                <a href="https://tidycal.com/devopjas/zoom">
+                  <button className="bg-teal-600 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
+                    <span> Book a Meeting</span>
+                    <img
+                      width="35"
+                      height="25"
+                      src="https://img.icons8.com/emoji/48/calendar-emoji.png"
+                      alt="calendar-emoji"
+                    />
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div className="w-full h-[20px] bg-teal-500" />
+      <br />
 
       <div className="mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
           <div className="grid-item  text-center col-span-2 ">
-            <h1 className="  lg:text-start text-center  flex justify-center py-2 bg-teal-600 dark:text-gray-100 text-gray-100 text-lg md:text-3xl font-semibold ">
-              Technologies I use
+            <h1 className="  lg:text-start   flex justify-start py-2  dark:text-gray-100 text-gray-900 text-2xl md:text-3xl font-semibold ">
+              MY PROFICIENCIES
             </h1>
             <div className="lg:pr-3 mt-7">
               <SkillSection />
@@ -123,7 +127,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid-item-2  ">
-            <div className="flex-item flex flex-col   sticky top-0">
+            <div className="flex-item flex flex-col   sticky top-10">
               <div className=" px-12 py-3 bg-teal-600 text-xl text-gray-100 dark:text-gray-100 font-semibold ">
                 TOOLS / RESOURCES / DATABASES
               </div>
