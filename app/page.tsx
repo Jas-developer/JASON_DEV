@@ -7,6 +7,8 @@ import "./styles/TextAnimation.css";
 import AllProjects from "./components/Projects";
 import CalendarIcon from "./components/Calendar";
 
+import SkillSection from "./components/SkillsSection";
+
 export default function Home() {
   return (
     <div className="lg:mt-12 mt-8 dark:divide-green-300 divide-gray-300 ">
@@ -92,7 +94,7 @@ export default function Home() {
             <br />
             <div className=" w-full flex items-center justify-center">
               <a href="https://tidycal.com/devopjas/zoom">
-                <button className="bg-teal-500 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
+                <button className="bg-teal-600 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
                   <span> Book a Meeting</span>
                   <img
                     width="35"
@@ -110,16 +112,19 @@ export default function Home() {
       <div className="mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
           <div className="grid-item  text-center col-span-2 ">
-            <h1 className=" rounded-l-md  lg:text-start text-center  flex justify-center py-2 bg-teal-600 dark:text-gray-100 text-gray-100 text-lg md:text-3xl font-semibold ">
-              Recent Projects
+            <h1 className="  lg:text-start text-center  flex justify-center py-2 bg-teal-600 dark:text-gray-100 text-gray-100 text-lg md:text-3xl font-semibold ">
+              Technologies I use
             </h1>
+            <div className="lg:pr-3 mt-7">
+              <SkillSection />
+            </div>
             <div className="lg:pr-3 mt-7">
               <AllProjects />
             </div>
           </div>
           <div className="grid-item-2  ">
-            <div className="flex-item flex flex-col   sticky top-10">
-              <div className=" px-12 py-3 bg-teal-600 text-xl text-gray-100 dark:text-gray-100 font-semibold rounded-r-md">
+            <div className="flex-item flex flex-col   sticky top-0">
+              <div className=" px-12 py-3 bg-teal-600 text-xl text-gray-100 dark:text-gray-100 font-semibold ">
                 TOOLS / RESOURCES / DATABASES
               </div>
               <Tools />
