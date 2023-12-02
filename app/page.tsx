@@ -117,7 +117,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
           <div className="grid-item  text-center col-span-2 ">
             <h1 className="  lg:text-start   flex justify-start py-2  dark:text-gray-100 text-gray-900 text-2xl md:text-3xl font-semibold ">
-              MY PROFICIENCIES
+              MY PROFICIENCIES & TOOLS
             </h1>
             <div className="lg:pr-3 mt-7">
               <SkillSection />
