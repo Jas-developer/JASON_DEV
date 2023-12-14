@@ -12,8 +12,8 @@ import SkillSection from "./components/SkillsSection";
 export default function Home() {
   return (
     <div className="lg:mt-12 mt-8 dark:divide-green-300 divide-gray-300 ">
-      <div className="items-center mb-6 space-y-2 relative xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-u-0">
-        <div className=".animate-profile flex  flex-col items-center pt-8 ">
+      <div className="items-center mb-6 space-y-2 relative xl:grid xl:grid-cols-2 xl:gap-x-8 xl:space-u-0 ">
+        <div className=".animate-profile flex  flex-col items-center pt-8 w-full">
           <Image
             alt="Picture of Jason"
             src={profile}
@@ -26,10 +26,25 @@ export default function Home() {
           <strong className="text-gray-500 dark:text-gray-300 text-center font-medium">
             Davao City | Software Developer
           </strong>
-          <div className=" bg-teal-600  px-12 py-3 mt-2 dark:text-gray-100 text-gray-100 font-semibold items-center followMe">
-            FOLLOW ME
+          <div className="flex  items-center flex-col mt-10 md:mt-0 justify-center">
+            <br />
+            <div className=" w-full flex items-center justify-center">
+              <div className=" flex justify-center ">
+                <a href="https://tidycal.com/devopjas/zoom">
+                  <button className="bg-teal-600 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
+                    <span> Book a Meeting</span>
+                    <img
+                      width="35"
+                      height="25"
+                      src="https://img.icons8.com/emoji/48/calendar-emoji.png"
+                      alt="calendar-emoji"
+                    />
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="flex space-x-5 pt-6">
+          <div className="flex space-x-5 pt-6 ">
             <a href="" target="_blank">
               <svg
                 viewBox="0 0 1024 1024"
@@ -68,45 +83,27 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="prose max-w-none lg:text-start text-center  justify-center gap-6 flex flex-col prose-lg mb-5  dark:prose-invert xl:col-span-2 bg-image">
-          <span className="text-3xl mt-2  md:text-5xl text-gray-900  font-serif dark:text-gray-100 font-medium">
-            Backend Web Developer
-          </span>
-          <span className="text-3xl md:text-5xl text-gray-900 dark:text-gray-100 font-medium font-serif">
-            & Technical Support
-          </span>
+        <div className=" ">
+          <div className="prose max-w-none lg:text-start text-center  justify-center gap-2 flex flex-col prose-lg mb-5  dark:prose-invert xl:col-span-2 bg-image">
+            <span className="text-2xl mt-2  md:text-4xl text-gray-900  font-serif dark:text-gray-100 font-medium">
+              BACKEND WEBDEVELOPER
+            </span>
+            <span className="text-2xl md:text-4xl text-gray-900 dark:text-gray-100 font-medium font-serif">
+              & A TECHNICAL SUPPORT
+            </span>
+          </div>
         </div>
       </div>
       <hr />
       {/* calendly and a meeting scheduler */}
       <div className="flex flex-col py-8">
-        <h1 className="text-2xl md:text-3xl">
-          Tech Enthusiast based in Davao City, Philippines.
-        </h1>
+        <h1 className="text-2xl md:text-3xl">Recent Projects</h1>
         <div className=" grid lg:grid-cols-2 w-full">
           <div className="flex justify-center w-full py-2 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg mt-8">
             <CalendarIcon />
           </div>
-          <div className="flex  items-center flex-col mt-10 md:mt-0 justify-center">
-            <div className="text-2xl flex justify-center font-semibold">
-              <span> Schedule a Zoom Meeting</span>
-            </div>
-            <br />
-            <div className=" w-full flex items-center justify-center">
-              <div className=" flex justify-center ">
-                <a href="https://tidycal.com/devopjas/zoom">
-                  <button className="bg-teal-600 px-12 py-2 rounded-lg hover:scale-105 transition  text-gray-100 items-center flex flex-row gap-2">
-                    <span> Book a Meeting</span>
-                    <img
-                      width="35"
-                      height="25"
-                      src="https://img.icons8.com/emoji/48/calendar-emoji.png"
-                      alt="calendar-emoji"
-                    />
-                  </button>
-                </a>
-              </div>
-            </div>
+          <div className="flex justify-center">
+            <h1>ABOUT THIS PROJECT</h1>
           </div>
         </div>
       </div>
