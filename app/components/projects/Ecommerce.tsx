@@ -57,6 +57,7 @@ export default function Ecomm() {
         body: JSON.stringify(body),
       });
 
+      console.log(BODY);
       if (!res.ok) {
         throw new Error(`Failed with status ${res.status}`);
       }
@@ -72,7 +73,7 @@ export default function Ecomm() {
   };
 
   // GET THE BOARDERS
-  const GET_BOARDER = async (body: string, api: string, select: string) => {
+  const GET_BOARDER = async (api: string, select: string) => {
     try {
       const controller = new AbortController();
       const token = localStorage.getItem("token");
@@ -106,17 +107,70 @@ export default function Ecomm() {
         },
         body: JSON.stringify(body),
       });
+
+      if (response) {
+        const data = await response.json();
+        setResult(data);
+      }
     } catch (error) {
       console.log(error);
     }
   };
 
+  //UPDATE THE BOARDER
+  const UPDATE_BOARDER = async (body: string, api: string, select: string) => {
+    try {
+      const token = localStorage.getItem("token");
+      const response = await fetch(api, {
+        method: `${select}`,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(body),
+      });
+
+      //check if there is no response then throw an error
+      if (!response) {
+        throw new Error("Unable to fetch the api");
+      }
+
+      const data = await response.json();
+      setResult(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // DELETE BOARDER
+  const DELETE_BOARDER = async (api: string, select: string) => {
+    try {
+      const token = localStorage.getItem("token");
+      const reponse = await fetch(api, {
+        method: `${select}`,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!reponse) {
+        throw new Error("Failed to delete the boarder");
+      }
+
+      const data = await reponse.json();
+
+      setResult(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   // handle submit
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // api endpoints
-    const register = "http//register";
-    const login = "http//login.com";
+    const register = "https://dorm-hu38.onrender.com/api/user/register";
+    const login = "https://dorm-hu38.onrender.com/api/user/login";
     const addboarder = "http//addboarder";
     const update = "http//updateboarder";
     const del = "http://delete.com";
@@ -124,10 +178,16 @@ export default function Ecomm() {
 
     if (input === register) {
       REGISTER_USER(BODY, input, select);
-    } else if (input === login) {
+    } else if (input == login) {
       LOGIN_USER(BODY, input, select);
     } else if (input === get || select === "GET") {
-      GET_BOARDER(BODY, input, select);
+      GET_BOARDER(input, select);
+    } else if (input === addboarder && select === "POST") {
+      ADD_BOARDER(BODY, input, select);
+    } else if (input === update && select === "PUT") {
+      UPDATE_BOARDER(BODY, input, select);
+    } else if (input === del) {
+      DELETE_BOARDER(input, select);
     }
   };
 
@@ -176,7 +236,9 @@ export default function Ecomm() {
             <div className="grid flex-item grid-cols-2 border">
               <div className="bg-white text-gray-600 border-r w-full h-full justify-center flex items-cenyer">
                 <span>
-                  Request result will appear here... {BODY} - {select} - {input}
+                  Request result will appear here... {BODY} - {select} - {input}{" "}
+                  <br />
+                  {result}
                 </span>
               </div>
               <div className="">
