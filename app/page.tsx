@@ -5,9 +5,9 @@ import Tools from "./components/Tools";
 import "./styles/TextAnimation.css";
 
 import AllProjects from "./components/Projects";
-import CalendarIcon from "./components/Calendar";
 
 import SkillSection from "./components/SkillsSection";
+import Ecomm from "./components/projects/Ecommerce";
 
 export default function Home() {
   return (
@@ -98,12 +98,9 @@ export default function Home() {
       {/* calendly and a meeting scheduler */}
       <div className="flex flex-col py-8">
         <h1 className="text-2xl md:text-3xl">Recent Projects</h1>
-        <div className=" grid lg:grid-cols-2 w-full">
+        <div className=" grid w-full">
           <div className="flex justify-center w-full py-2 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg mt-8">
-            <CalendarIcon />
-          </div>
-          <div className="flex justify-center">
-            <h1>ABOUT THIS PROJECT</h1>
+            <Ecomm />
           </div>
         </div>
       </div>
