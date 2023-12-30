@@ -61,7 +61,7 @@ export default function Navbar() {
                     About
                   </Link>
                   <Link
-                    href="/projects"
+                    href="/Projects"
                     prefetch
                     className={`${
                       pathname === "/projects"

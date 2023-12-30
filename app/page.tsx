@@ -4,10 +4,9 @@ import Language from "./components/Language";
 import Tools from "./components/Tools";
 import "./styles/TextAnimation.css";
 
-import AllProjects from "./components/Projects";
-
 import SkillSection from "./components/SkillsSection";
-import Ecomm from "./components/projects/Ecommerce";
+
+import CoreSkills from "./components/paragraph/CoreSkills";
 
 export default function Home() {
   return (
@@ -85,10 +84,10 @@ export default function Home() {
         </div>
         <div className=" ">
           <div className="prose max-w-none lg:text-start text-center  justify-center gap-2 flex flex-col prose-lg mb-5  dark:prose-invert xl:col-span-2 bg-image">
-            <span className="text-2xl mt-2  md:text-4xl text-gray-900  font-serif dark:text-gray-100 font-medium">
+            <span className="text-2xl mt-2  md:text-4xl font-sans text-gray-900   dark:text-gray-100 font-medium">
               BACKEND WEBDEVELOPER
             </span>
-            <span className="text-2xl md:text-4xl text-gray-900 dark:text-gray-100 font-medium font-serif">
+            <span className="text-2xl md:text-4xl text-gray-900 dark:text-gray-100 font-medium font-sans">
               & A TECHNICAL SUPPORT
             </span>
           </div>
@@ -97,10 +96,12 @@ export default function Home() {
       <hr />
       {/* calendly and a meeting scheduler */}
       <div className="flex flex-col py-8">
-        <h1 className="text-2xl md:text-3xl">Recent Projects</h1>
+        <h1 className="text-2xl md:text-3xl text-green-500 font-sans font-semibold">
+          RECENT API ENDPOINT PROJECTS
+        </h1>
         <div className=" grid w-full">
           <div className="flex justify-center w-full py-2 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg mt-8">
-            <Ecomm />
+            example.com
           </div>
         </div>
       </div>
@@ -110,14 +111,20 @@ export default function Home() {
       <div className="mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 relative ">
           <div className="grid-item  text-center col-span-2 ">
-            <h1 className="  lg:text-start   flex justify-start py-2  dark:text-gray-100 text-gray-900 text-2xl md:text-3xl font-semibold ">
+            <h1 className="  lg:text-start   flex justify-start py-2 font-sans  text-green-500  text-2xl md:text-3xl font-semibold ">
               MY PROFICIENCIES & TOOLS
             </h1>
             <div className="lg:pr-3 mt-7">
               <SkillSection />
             </div>
-            <div className="lg:pr-3 mt-7">
-              <AllProjects />
+            <br />
+            <hr className="w-[30vw]" />
+            <div className="lg:pr-3 mt-7 text-start text-2xl md:text-3xl font-semibold flex flex-col gap-2">
+              <h1 className="text-green-500 font-sans">CORE SKILLS</h1>
+              <div className="md:text-lg text-lg">
+                <CoreSkills />
+                <br />
+              </div>
             </div>
           </div>
           <div className="grid-item-2  ">
