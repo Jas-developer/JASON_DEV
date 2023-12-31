@@ -27,7 +27,7 @@ export default function CoreSkills() {
   return (
     <div className="flex flex-col">
       {PARAGRAPHS.map((skill: string) => (
-        <div className="flex flex-col font-sans ">
+        <div key={skill} className="flex flex-col font-sans ">
           <p className="mt-2">{skill}</p>
         </div>
       ))}

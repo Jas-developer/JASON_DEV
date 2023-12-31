@@ -28,25 +28,27 @@ export default function BlogPosts() {
           />
         </div>
         <div className="flex gap-10 text-lg  md:text-xl flex-col font-medium text-gray-900 dark:text-gray-100 font-sans">
-          <p>
-            Hi, I'm Jason, a backend software developer passionate about
-            crafting robust solutions. My expertise lies in backend development,
-            where I thrive on creating efficient and scalable applications.I am
-            also capable of touch the frontend like integrating api's, Creating
-            a responsive design etc.
-          </p>
-          <p>
-            While my main focus is on backend development, I also harbor a
-            strong interest in blockchain technology. I'm captivated by its
-            potential and continuously explore its applications in different
-            industries.
-          </p>
-          <p>
-            I enjoy delving into the intricacies of server-side technologies and
-            building systems that power seamless user experiences. Solving
-            complex challenges and optimizing functionality excite me in the
-            world of software development.
-          </p>
+          <div>
+            <p>
+              Hi, I&apos;m Jason, a backend software developer passionate about
+              crafting robust solutions. My expertise lies in backend
+              development, where I thrive on creating efficient and scalable
+              applications. I am also capable of touching the frontend like
+              integrating APIs, creating responsive designs, etc.
+            </p>
+            <p>
+              While my main focus is on backend development, I also harbor a
+              strong interest in blockchain technology. I&apos;m captivated by
+              its potential and continuously explore its applications in
+              different industries.
+            </p>
+            <p>
+              I enjoy delving into the intricacies of server-side technologies
+              and building systems that power seamless user experiences. Solving
+              complex challenges and optimizing functionality excite me in the
+              world of software development.
+            </p>
+          </div>
         </div>
       </div>
       <hr />
