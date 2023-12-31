@@ -1,7 +1,6 @@
 import Image from "next/image";
 import JASON from "../../assets/images/JASON.jpg";
 import IMAGE1 from "../../assets/images/ME (2).jpg";
-import IMAGE2 from "../../assets/images/ME.jpg";
 
 export default function BlogPosts() {
   return (
