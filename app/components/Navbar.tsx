@@ -140,7 +140,19 @@ export default function Navbar() {
               >
                 Blogs
               </Link>
-              z
+              <Link
+                href="/Projects"
+                prefetch
+                className={`${
+                  pathname === "/projects"
+                    ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                }`}
+              >
+                <button className="bg-teal-700 rounded-sm text-gray-100 px-3 ml-3 p-2">
+                  Projects
+                </button>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>
