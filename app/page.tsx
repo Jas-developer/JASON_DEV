@@ -101,7 +101,9 @@ export default function Home() {
         </h1>
         <div className=" grid w-full">
           <div className="flex justify-center w-full py-2 bg-gray-300 dark:bg-gray-800 shadow-md rounded-lg mt-8">
-            example.com
+            <a href="projects.pdf" download="projects.pdf">
+              Download File
+            </a>
           </div>
         </div>
       </div>
