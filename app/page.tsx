@@ -85,10 +85,10 @@ export default function Home() {
         <div className=" ">
           <div className="prose max-w-none lg:text-start text-center  justify-center gap-2 flex flex-col prose-lg mb-5  dark:prose-invert xl:col-span-2 bg-image">
             <span className="text-2xl mt-2  md:text-4xl font-sans text-gray-900   dark:text-gray-100 font-medium">
-              BACKEND WEBDEVELOPER
+              FULLSTACK SOFTWARE
             </span>
             <span className="text-2xl md:text-4xl text-gray-900 dark:text-gray-100 font-medium font-sans">
-              & A TECHNICAL SUPPORT
+              DEVELOPER
             </span>
           </div>
         </div>
